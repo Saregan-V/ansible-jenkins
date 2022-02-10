@@ -11,11 +11,11 @@
   
 - name: create directory
   file:
-   path: /var/www/html
-   state: directory
-   owner: root
-   recurse: yes
-   code: 0755
+    path: /var/www/html
+    state: directory
+    owner: root
+    recurse: yes
+    code: 0755
 
 - name: index
   template:
