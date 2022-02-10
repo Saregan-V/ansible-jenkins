@@ -8,14 +8,14 @@
   systemd:
     name: nginx
     state: started
-  
+    
 - name: create directory
   file:
     path: /var/www/html
     state: directory
     owner: root
     recurse: yes
-    code: 0755
+    mode: 0755
 
 - name: index
   template:
